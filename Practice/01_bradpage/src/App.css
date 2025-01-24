@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --red: #D01C28;
+  --white: #FFFFFF;
+  --grey: #adb5bd;
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+}
+
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+
+/*? nav starts */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-transform: capitalize;
+  gap: 24px;
+}
+
+.loginBtn {
+  all: unset;
+  padding: 6px 16px;
+  height: 25px;
+  font-weight: 500;
+  background: var(--red);
+  color: var(--white);
+  cursor: pointer;
+}
+
+/*? nav ends  */
+
+/*? hero starts */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 72px);
+}
+
+.hero-text {
+  width: 595px;
+  font-size: 108px;
+  font-weight: 800;
+  line-height: 102px;
+}
+
+.hero-tag {
+  width: 404px;
+  height: 91px;
+  color: var(--grey);
+  font-weight: 500;
+}
+
+.btns {
+  display: flex;
+  width: 350px;
+  height: 51px;
+  margin-top: 36px;
+  gap: 9px;
+  outline: none;
+}
+
+.shop-btn,
+.category-btn {
+  all: unset;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.shop-btn {
+  background: var(--red);
+  color: var(--white);
+}
+
+.category-btn {
+  background: var(--white);
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+p:nth-of-type(2) {
+  color: var(--black);
+  margin: 12px 0px 12px 0px;
+  font-size: 13px;
+  font-weight: 500;
+  max-width: 400px;
+}
+
+.logos {
+  display: flex;
+  justify-content: start;
+  gap: 32px;
+}
+
+/*? hero ends */
